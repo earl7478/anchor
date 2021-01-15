@@ -1,6 +1,6 @@
 const configInfo = require('./src/config/index.js')
 
-process.env.VUE_APP_TITLE = configInfo.title || '追X'
+process.env.VUE_APP_TITLE = configInfo.title || 'Anchor'
 module.exports = {
   devServer: {
     port: 80,
