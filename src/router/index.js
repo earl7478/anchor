@@ -13,19 +13,25 @@ const routes = [
       {
         // 首页
         path: '/',
-        component: resolve => require(['@/views/market-place.vue'], resolve),
+        component: resolve => require(['@/views/market/market-place.vue'], resolve),
         meta: { title: 'Market Place', auth: true, class: 4 }
+      },
+      {
+        // 保险项目
+        path: '/market-detail',
+        component: resolve => require(['@/views/market/market-detail.vue'], resolve),
+        meta: { title: 'Market Detail', auth: true, class: 4 }
       },
       {
         // 挖矿
         path: '/mint',
-        component: resolve => require(['@/views/mint.vue'], resolve),
+        component: resolve => require(['@/views/mint/mint.vue'], resolve),
         meta: { title: 'Mint', auth: true, class: 4 }
       },
       {
         // 赎回
         path: '/redeem',
-        component: resolve => require(['@/views/redeem.vue'], resolve),
+        component: resolve => require(['@/views/redeem/redeem.vue'], resolve),
         meta: { title: 'Redeem', auth: true, class: 4 }
       },
       // {

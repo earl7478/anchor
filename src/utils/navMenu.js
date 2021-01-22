@@ -9,7 +9,20 @@ export default [
       sort: 100,
       code: "/",
     },
-    children: []
+    children: [
+      // {
+      //   adminMenu: {
+      //     id: 101,
+      //     menuName: "market Detail",
+      //     menuType: "page",
+      //     url: "/market-detail",
+      //     icon: 'el-icon-cpu',
+      //     sort: 100,
+      //     code: "/market-detail",
+      //   },
+      //   children: []
+      // }
+    ]
   }, {
     adminMenu: {
       id: 2,

@@ -33,7 +33,7 @@ export default {
 .layout_content::after{ display: block; content: ''; clear: both; }
 .layout_content{ display: flex;
   .right_content{ flex: 1;
-    .view_content{ height: calc(100% - 80px); overflow-y: auto; box-sizing: border-box; padding: 16px; }
+    .view_content{ height: calc(100vh - 80px); box-sizing: border-box; padding: 16px; overflow-y: scroll; }
   }
 }
 </style>

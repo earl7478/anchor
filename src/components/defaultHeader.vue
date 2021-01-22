@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.header{ padding: 0; height: 80px; box-shadow:0px 3px 3px rgba(0,0,0,0.1); display: flex; align-items: center;
+.header{ padding: 0; height: 80px; box-shadow:0px 3px 3px rgba(0,0,0,0.1); display: flex; align-items: center; z-index: 100; position: relative;
   .inner_box{ display: flex; width: 100%; box-sizing: border-box; padding: 0 20px; justify-content: space-between; align-items: center; 
     .menu_collapse{ font-size: 22px; }
     .nav{ font-size: 0.7rem; 

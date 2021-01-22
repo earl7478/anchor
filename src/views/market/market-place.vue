@@ -2,7 +2,7 @@
   <div class="home">
     <div class="fund_list">
         <ul>
-          <li class="item" v-for="(item, i) in fundList" :key="i">
+          <li class="item" v-for="(item, i) in fundList" :key="i" @click="toDetail(item)">
             <h3><img src="@/assets/images/rmb.png" /> {{item.name}}</h3>
             <div class="item_content">
               <span class="desc">锁仓量</span>
@@ -27,19 +27,21 @@ export default {
   data() {
     return {
       fundList: [
-        {name: 'AAVE', con: '883,699'},
-        {name: 'AAVE', con: '883,699'},
-        {name: 'AAVE', con: '883,699'},
-        {name: 'AAVE', con: '883,699'},
-        {name: 'AAVE', con: '883,699'},
-        {name: 'AAVE', con: '883,699'},
-        {name: 'AAVE', con: '883,699'},
-        {name: 'AAVE', con: '883,699'}
+        {name: 'AAVE1', con: '883,699'},
+        {name: 'AAVE2', con: '883,699'},
+        {name: 'AAVE3', con: '883,699'},
+        {name: 'AAVE4', con: '883,699'},
+        {name: 'AAVE5', con: '883,699'},
+        {name: 'AAVE6', con: '883,699'},
+        {name: 'AAVE7', con: '883,699'},
+        {name: 'AAVE8', con: '883,699'}
       ]
     }
   },
   methods: {
-    
+    toDetail(item) {
+      this.$router.push({path: '/market-detail', query: item})
+    }
   }
 }
 </script>
