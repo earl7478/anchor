@@ -49,7 +49,7 @@ export default {
 <style lang="scss" scoped>
 .fund_list{ 
   ul{ display: flex; flex-wrap: wrap; padding: 0.75rem 0;
-    li{ width: calc(25% - 0.75rem); border: solid #e1e1e1 0.05rem; box-sizing: border-box; margin: 0 0.75rem 0.75rem 0;
+    li{ width: calc(25% - 0.75rem); border: solid #e1e1e1 0.05rem; box-sizing: border-box; margin: 0 0.75rem 0.75rem 0; cursor: pointer;
       h3{ display: flex; justify-items: center; align-items: center; padding: 0.5rem; font-size: 0.9rem;
         img{ width: 1.5rem; height: 1.5rem; margin-right: 0.5rem; }
       }

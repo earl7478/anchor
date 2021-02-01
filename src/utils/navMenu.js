@@ -45,6 +45,17 @@ export default [
       code: "/",
     },
     children: []
+  }, {
+    adminMenu: {
+      id: 4,
+      menuName: "Dashbord",
+      menuType: "page",
+      url: "/dashbord",
+      icon: 'el-icon-set-up',
+      sort: 99,
+      code: "/dashbord",
+    },
+    children: []
   },
   // {
   //   adminMenu: {

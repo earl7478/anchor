@@ -34,6 +34,12 @@ const routes = [
         component: resolve => require(['@/views/redeem/redeem.vue'], resolve),
         meta: { title: 'Redeem', auth: true, class: 4 }
       },
+      {
+        // dashbord
+        path: '/dashbord',
+        component: resolve => require(['@/views/dashbord/dashbord.vue'], resolve),
+        meta: { title: 'Dashbord', auth: true, class: 4 }
+      }
       // {
       //   // 关于我
       //   path: '/about',
